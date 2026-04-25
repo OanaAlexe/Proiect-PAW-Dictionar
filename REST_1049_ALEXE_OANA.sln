@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REST_1049_ALEXE_OANA", "REST_1049_ALEXE_OANA\REST_1049_ALEXE_OANA.csproj", "{D192E618-EE10-4C22-B587-6114E32F9CFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D192E618-EE10-4C22-B587-6114E32F9CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D192E618-EE10-4C22-B587-6114E32F9CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D192E618-EE10-4C22-B587-6114E32F9CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D192E618-EE10-4C22-B587-6114E32F9CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF039C1E-494A-4B43-92CB-87AB702F6B5F}
+	EndGlobalSection
+EndGlobal
