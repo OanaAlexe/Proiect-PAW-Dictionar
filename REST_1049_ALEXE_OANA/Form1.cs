@@ -1,20 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace REST_1049_ALEXE_OANA
 {
-    public partial class Form1 : Form
+    public partial class formIntroducereCuvant : Form
     {
-        public Form1()
+
+        public Cuvant CuvantModificat { get; set; }
+        public formIntroducereCuvant()
         {
             InitializeComponent();
+            cmbLimba.Items.Add("Franceza");
+            cmbLimba.Items.Add("Germana");
+            cmbLimba.Items.Add("Latina");
+        }
+
+        private void btnSalveaza_Click(object sender, System.EventArgs e)
+        {
+            CuvantModificat = new Cuvant();
+            CuvantModificat.Termen = txtTermen.Text;
+            CuvantModificat.Definitie = txtDefinitie.Text;
+            CuvantModificat.Traducere = txtTraducere.Text;
+            CuvantModificat.Limba = cmbLimba.SelectedItem?.ToString();
+            DialogResult = DialogResult.OK;
         }
     }
 }
