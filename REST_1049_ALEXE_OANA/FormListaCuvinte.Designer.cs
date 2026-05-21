@@ -64,6 +64,7 @@
             this.btnSterge.TabIndex = 2;
             this.btnSterge.Text = "Sterge";
             this.btnSterge.UseVisualStyleBackColor = true;
+            this.btnSterge.Click += new System.EventHandler(this.btnSterge_Click);
             // 
             // lblTitlu
             // 

@@ -46,6 +46,7 @@
             // 
             // txtTermen
             // 
+            this.txtTermen.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtTermen.Location = new System.Drawing.Point(135, 72);
             this.txtTermen.Name = "txtTermen";
             this.txtTermen.Size = new System.Drawing.Size(322, 22);
@@ -53,6 +54,7 @@
             // 
             // txtDefinitie
             // 
+            this.txtDefinitie.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtDefinitie.Location = new System.Drawing.Point(135, 154);
             this.txtDefinitie.Name = "txtDefinitie";
             this.txtDefinitie.Size = new System.Drawing.Size(322, 22);
@@ -60,6 +62,7 @@
             // 
             // txtTraducere
             // 
+            this.txtTraducere.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtTraducere.Location = new System.Drawing.Point(135, 225);
             this.txtTraducere.Name = "txtTraducere";
             this.txtTraducere.Size = new System.Drawing.Size(322, 22);

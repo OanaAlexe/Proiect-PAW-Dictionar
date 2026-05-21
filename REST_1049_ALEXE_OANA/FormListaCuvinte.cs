@@ -25,13 +25,7 @@ namespace REST_1049_ALEXE_OANA
                 {
                     var cuvantNou = formIntroducereCuvant.CuvantModificat;
                     _cuvinte.Add(cuvantNou);
-                    ListViewItem lvItem = new ListViewItem(cuvantNou.Termen);
-                    lvItem.SubItems.Add(cuvantNou.Definitie);
-                    lvItem.SubItems.Add(cuvantNou.Traducere);
-                    lvItem.SubItems.Add(cuvantNou.Limba);
-
-                    lvCuvinte.Items.Add(lvItem);
-
+                    AfiseazaCuvinte();
                 }
             }
         }
@@ -64,6 +58,21 @@ namespace REST_1049_ALEXE_OANA
                 item.SubItems.Add(cuvant.Traducere);
                 item.SubItems.Add(cuvant.Limba);
                 lvCuvinte.Items.Add(item);
+            }
+        }
+
+        private void btnSterge_Click(object sender, EventArgs e)
+        {
+            if (lvCuvinte.SelectedItems.Count > 0)
+            {
+                var index = lvCuvinte.SelectedItems[0].Index;
+                var cuvant = _cuvinte[index];
+                if (MessageBox.Show("Sigur doriti sa stergeti?", "Confirmare", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+                     == DialogResult.Yes)
+                {
+                    _cuvinte.RemoveAt(index);
+                    AfiseazaCuvinte();
+                }
             }
         }
     }
