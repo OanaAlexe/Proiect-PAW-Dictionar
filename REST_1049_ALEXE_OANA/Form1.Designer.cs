@@ -40,8 +40,8 @@
             this.btnSalveaza = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.epValidare = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.epValidare)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTermen
@@ -145,9 +145,9 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Ce cuvant vrei sa introduci?";
             // 
-            // errorProvider1
+            // epValidare
             // 
-            this.errorProvider1.ContainerControl = this;
+            this.epValidare.ContainerControl = this;
             // 
             // formIntroducereCuvant
             // 
@@ -167,7 +167,7 @@
             this.Controls.Add(this.txtTermen);
             this.Name = "formIntroducereCuvant";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epValidare)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,7 +185,7 @@
         private System.Windows.Forms.Button btnSalveaza;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider epValidare;
     }
 }
 
