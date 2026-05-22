@@ -23,5 +23,11 @@ namespace REST_1049_ALEXE_OANA
             CuvantModificat.Limba = cmbLimba.SelectedItem?.ToString();
             DialogResult = DialogResult.OK;
         }
+
+        private void btnCancel_Click(object sender, System.EventArgs e)
+        {
+            DialogResult = DialogResult.Cancel;
+            CuvantModificat = null;
+        }
     }
 }

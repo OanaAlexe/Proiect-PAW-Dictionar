@@ -119,7 +119,7 @@
             // 
             this.btnSalveaza.Location = new System.Drawing.Point(254, 402);
             this.btnSalveaza.Name = "btnSalveaza";
-            this.btnSalveaza.Size = new System.Drawing.Size(75, 23);
+            this.btnSalveaza.Size = new System.Drawing.Size(90, 23);
             this.btnSalveaza.TabIndex = 10;
             this.btnSalveaza.Text = "Salveaza";
             this.btnSalveaza.UseVisualStyleBackColor = true;
@@ -129,10 +129,11 @@
             // 
             this.btnCancel.Location = new System.Drawing.Point(450, 402);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(83, 23);
             this.btnCancel.TabIndex = 11;
             this.btnCancel.Text = "Anuleaza";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // label1
             // 
